@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 0;
+}
+
+.bg-slider{
+    height: calc(100% - 120px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    animation: slider-change ease-in-out 20s both infinite;
+    margin: 0;
+    
+    
+  /*  position: absolute;
+    top: 0;*/
+}
+
+.slider-cover{
+    height: calc(100% - 120px);
+    width: 100%;    
+    position: absolute;
+    z-index: 100;
+    top: 120px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+@keyframes slider-change{
+    0%{
+        background-image:  url("rhcp1.jpg");    
+    }
+    25%{
+        background-image: url("rhcp2.jpg");        
+    }
+    50%{
+        background-image: url("rhpj.jpg");
+    }
+    75%{
+        background-image: url("rhcp1.jpg");    
+    }
+    100%{
+        background-image: url("rhcp1.jpg");        
+    }
+}
+
+.navbar{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    top: 120px;
+    z-index: 200;
+    width: 100%;
+}
+.navbar-link.is-active{
+    color: #aaa;
+}
+.navbar-item{
+    color: #aaa;
+}
+.navbar-dropdown .navbar-item{
+    color: black;
+}
+.navbar-link.is-active:hover{
+    color: black;
+}
+.hero-top{
+    padding: 29.5px 24px;
+}
+#amblem{
+    height: 60px;
+    
+}
+.navbar-burger span{
+    background-color: white;
+}
